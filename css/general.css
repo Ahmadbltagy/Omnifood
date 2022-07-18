@@ -56,6 +56,18 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: currentColor;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e67e22;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,6 +107,9 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
 .grid--center-v {
   align-items: center;
 }
@@ -132,7 +147,7 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -210,4 +225,8 @@ body {
 .list-icon {
   font-size: 3rem;
   color: #e67e22;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
