@@ -76,7 +76,7 @@ Medium: 11px
 html {
   /*reset default font-size to 10px >> 1rem == 10px instead of 16px*/
   font-size: 62.5%;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
