@@ -16,7 +16,7 @@ btnNavEl.addEventListener("click", (e) => {
 
 const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
+allLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
@@ -44,7 +44,7 @@ allLinks.forEach(function (link) {
 const sectionHeroEl = document.querySelector(".section-hero");
 
 const obs = new IntersectionObserver(
-  function (entries) {
+  (entries) => {
     const ent = entries[0];
     console.log(ent);
 
